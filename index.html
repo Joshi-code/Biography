@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Biography</title>
+    <link rel="icon" href="/img/biography.png">
+    <link rel="stylesheet" href="/CSS/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="testimonial">
+            <article>
+                <h1>About Me</h1>
+                <img src="/img/bami.jpg" alt="josh-image">
+                <h5>Joshua Bamidele Olorunfemi</h5>
+                <p>I am a Frontend ethusiast developer with exceptional interest in project management, project optimization,
+                    finding solutions and determining customers satisfactions. I have adept interest in collaborating with UX and design 
+                    teams to plan the technical writing and execution of functional specifications for websites and applications.
+                </P>
+            </article>
+        </div>
+        <div class="learn">
+            <p id="skills">I am currently learning HTML and CSS</p>
+            <button id="btn" onclick="change_text(); changeBgToTeal()">Update Me</button>
+        </div>
+    </div>
+
+
+    <!--Javascript-->
+    <script>
+         function change_text(){
+            document.getElementById("skills").innerHTML = "I am currently learning JavaScript";
+        }
+
+        function changeBgToTeal(){
+            document.getElementById("btn").style.color="white";
+            document.getElementById("btn").style.backgroundcolor="teal";
+            document.getElementById("btn").style.border="1px solid white";
+            document.getElementById("btn").style.padding="10px 30px";
+        }
+    </script><!--jS end here-->
+</body>
+</html>
